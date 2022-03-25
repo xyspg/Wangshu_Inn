@@ -1,3 +1,3 @@
 # Wangshu_Inn
 
-This is a little wedsite app.
+This is a little website app.
