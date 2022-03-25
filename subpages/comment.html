@@ -5,6 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="/tailwind.css" rel="stylesheet">
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
                 <nav class="mt-6">
                     <div>
                         <a class="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-r-4 border-blue-500"
-                           href="../index.html">
+                           href="index.html">
                             <span class="text-left">
                                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 2048 1792"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -154,23 +155,29 @@
                                        class="block w-full py-1.5 pl-10 pr-4 leading-normal rounded-2xl focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 ring-opacity-90 bg-gray-100 dark:bg-gray-800 text-gray-400 aa-input"
                                        placeholder="搜索"/>
                                 <div class="absolute right-0 hidden h-auto px-2 py-1 mr-2 text-xs text-gray-400 border border-gray-300 rounded-2xl md:block">
-
+                                    +
                                 </div>
                             </div>
                         </div>
                         <div class="relative p-1 flex items-center justify-end w-1/4 ml-5 mr-4 sm:mr-0 sm:right-auto">
                             <a href="#" class="block relative">
-                                <img alt="profil" src="../img/kazuha_pf.jpg"
+                                <img alt="profil" src="./img/kazuha_pf.jpg"
                                      class="mx-auto object-cover rounded-full h-10 w-10 "/>
                             </a>
                         </div>
                     </div>
                 </div>
             </header>
-            <script src="../script/main.js"></script>
-            <div class="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0 flex flex-col">
-                    <p class="text-4xl font-bold">今天为周五</p>
 
+            <div class="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0 flex flex-col">
+                <div id="vcomments"></div>
+                <script>
+                    new Valine({
+                        el: '#vcomments',
+                        appId: 'prieiB4hPQuRRf3DhKp5LtRg-gzGzoHsz',
+                        appKey: 'qawH2cBHoInxbugdbJmvulEz'
+                    })
+                </script>
             </div>
 
 
