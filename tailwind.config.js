@@ -5,9 +5,9 @@ purge: [
      ],
     darkMode: false, // or 'media' or 'class'
     theme: {
-    fontFamily:{
-        'HY45': ['HYRuanYuan', '45W']
-    }
+    fontFamily: {
+        serif: ['HYRunYuan','55W'],
+    },
   extend: {},
 },
 variants: {},
