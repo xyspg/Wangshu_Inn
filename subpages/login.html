@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <!-- ... -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@authing/native-js-ui-components"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@authing/native-js-ui-components/lib/index.min.css" rel="stylesheet">
+    </link>
+    <link href="/tailwind.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+<br>
+<div>
+<script>
+    var guard = new AuthingNativeJsUIComponents.Guard("62454142a50b99eb6086af65");
+    // 事件监听
+    guard.on("load", (authClient) => console.log(authClient));</script>
+</div>
+</body>
+</html>
