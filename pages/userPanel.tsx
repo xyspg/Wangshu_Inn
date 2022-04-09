@@ -211,27 +211,110 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </header>
-                    <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0 flex flex-col">
-                        <div className="bg-white dark:bg-gray-800 w-full mx-auto p-8">
-                            <div className="flex flex-row justify-between">
-                                <img src="/assets/banners/The%20Herons%20Court%201.png" className="max-h-64 my-6"/>
-                                <img src="/img/misspliter%20homa.jpeg" className="max-h-64 my-6"/>
+                    <div className="overflow-auto pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0 flex flex-col">
+                        <div className="flex flex-row">
+                            <div className="p-8">
+                                <img src="../image/kazuha_pf.jpg" className="max-h-64 rounded-full"></img>
+                                    <button type="button"
+                                            className="mt-4 px-4 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-black w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                        修改
+                                    </button>
                             </div>
-                            <p className=" dark:text-white w-full md:w-2/3 mh-3 m-auto font-bold text-center text-2xl md:text-3xl">
-                                祈愿预告
-                            </p>
-                        </div>
+                            <div className="shadow-md bg-white rounded-2xl w-full">
+                                <div className="p-8 text-xl text-gray-500">
+                                    <div>
+                                        用户名
+                                    </div>
+                                    <div>
+                                        <form
+                                            className="flex flex-col md:flex-row w-3/4 mt-4 max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
+                                            <div className=" relative ">
+                                                <input type="text" id=""
+                                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                       placeholder="Kaedahara Kazuha"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div className="p-8 text-xl text-gray-500">
+                                    <div>
+                                        Email
+                                    </div>
+                                    <div>
+                                        <form
+                                            className="flex flex-col md:flex-row w-3/4 mt-4 max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
+                                            <div className=" relative ">
+                                                <input type="text" id=""
+                                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                       placeholder="example@i.pkuschool.edu.cn"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div className="p-8 text-xl text-gray-500">
+                                    <div>
+                                        米游社 / Hoyolab UID
+                                    </div>
+                                    <div>
+                                        <form
+                                            className="flex flex-col md:flex-row w-3/4 mt-4 max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
+                                            <div className=" relative ">
+                                                <input type="text" id=""
+                                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                       placeholder="example"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div className="p-8 text-xl text-gray-500">
+                                    <div>
+                                        UID
+                                    </div>
+                                    <div>
+                                        <form
+                                            className="flex flex-col md:flex-row w-3/4 mt-4 max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
+                                            <div className=" relative ">
+                                                <input type="text" id=""
+                                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                       placeholder="100000000"/>
+                                            </div>
+                                        </form>
+                                    </div>
 
-                        <div className="bg-white dark:bg-gray-800 w-full mx-auto p-8">
-                            <div className="flex flex-row justify-between">
-                                <img src="/assets/events/divine_ingenuity.jpg" className="max-h-64 my-6"/>
-                                <img src="/assets/events/overflowing_mastery.jpg" className="max-h-64 my-6"/>
+                                        <label className="text-gray-700" htmlFor="server">
+                                            服务器
+                                            <select id="server"
+                                                    className="p-8 w-52 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                                                    name="server">
+                                                <option value="">
+                                                    选择服务器
+                                                </option>
+                                                <option value="dog">
+                                                    官服
+                                                </option>
+                                                <option value="cat">
+                                                    B服
+                                                </option>
+                                                <option value="hamster">
+                                                    Asia
+                                                </option>
+                                                <option value="parrot">
+                                                    America
+                                                </option>
+                                                <option value="spider">
+                                                    Europe
+                                                </option>
+                                                <option value="goldfish">
+                                                    TW,HK,MO
+                                                </option>
+                                            </select>
+                                        </label>
+
+                                </div>
                             </div>
-                            <p className=" dark:text-white w-full md:w-2/3 mh-3 m-auto font-bold text-center text-2xl md:text-3xl">
-                                活动预告
-                            </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </main>

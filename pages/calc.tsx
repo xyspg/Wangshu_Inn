@@ -211,30 +211,102 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </header>
-                    <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0 flex flex-col">
-                        <div className="bg-white dark:bg-gray-800 w-full mx-auto p-8">
-                            <div className="flex flex-row justify-between">
-                                <img src="/assets/banners/The%20Herons%20Court%201.png" className="max-h-64 my-6"/>
-                                <img src="/img/misspliter%20homa.jpeg" className="max-h-64 my-6"/>
-                            </div>
-                            <p className=" dark:text-white w-full md:w-2/3 mh-3 m-auto font-bold text-center text-2xl md:text-3xl">
-                                祈愿预告
-                            </p>
-                        </div>
 
-                        <div className="bg-white dark:bg-gray-800 w-full mx-auto p-8">
-                            <div className="flex flex-row justify-between">
-                                <img src="/assets/events/divine_ingenuity.jpg" className="max-h-64 my-6"/>
-                                <img src="/assets/events/overflowing_mastery.jpg" className="max-h-64 my-6"/>
+                    <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 rounded-xl ">
+                        <div className="bg-white dark:bg-gray-800 w-auto mx-auto p-8">
+                            <p className="text-4xl pb-32 mb-6">升级计算器</p>
+                            <div className=" relative">
+                                <input type="text" id="current_char_level"
+                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300  py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                       placeholder="当前等级"/>
                             </div>
-                            <p className=" dark:text-white w-full md:w-2/3 mh-3 m-auto font-bold text-center text-2xl md:text-3xl">
-                                活动预告
-                            </p>
+                            <div className=" relative mt-2">
+                                <input type="text" id="desired_char_level"
+                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300  py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                       placeholder="期望等级"/>
+                            </div>
+                            <select
+                                className="block w-52 mt-2 text-gray-700 py-2 px-3 border border-gray-300 bg-white text-black shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                                name="animals">
+                                <option value="">
+                                    选择角色
+                                </option>
+                                <option value="albedo">
+                                    阿贝多
+                                </option>
+                                <option value="aloy">
+                                    埃洛伊
+                                </option>
+                                <option value="arataki_itto">
+                                    荒泷一斗
+                                </option>
+                                <option value="babara">
+                                    芭芭拉
+                                </option>
+                                <option value="beidou">
+                                    北斗
+                                </option>
+                                <option value="bennett">
+                                    班尼特
+                                </option>
+                                <option value="chongyun">
+                                    重云
+                                </option>
+                                <option value="diluc">
+                                    迪卢克
+                                </option>
+                                <option value="diona">
+                                    迪奥娜
+                                </option>
+                                <option value="eula">
+                                    优菈
+                                </option>
+                                <option value="fischl">
+                                    菲谢尔
+                                </option>
+                            </select>
+                            <button id='calculate' type="button"
+                                    className="mt-2 py-2 px-4 bg-gray-200 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-black transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                                    onClick="expCalculator()">
+                                计算
+                            </button>
+                        </div>
+                        <div className="bg-white dark:bg-gray-800 w-auto mx-auto p-8">
+                            <p className="text-4xl pb-32 mb-6">武器计算器</p>
+                            <div className=" relative">
+                                <input type="text" id="current_char_level"
+                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300  py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                       placeholder="当前等级"/>
+                            </div>
+                            <div className=" relative mt-2">
+                                <input type="text" id="desired_char_level"
+                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300  py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                       placeholder="期望等级"/>
+                            </div>
+
+                            <select
+                                className="block w-52 mt-2 text-gray-700 py-2 px-3 border border-gray-300 bg-white text-black shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                                name="weaponExp">
+                                <option value="">
+                                    选择武器
+                                </option>
+                                <option value="albedo">
+
+                                </option>
+
+                            </select>
+                            <button id='calculate' type="button"
+                                    className="mt-2 py-2 px-4 bg-gray-200 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-black transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                                    onClick="expCalculator()">
+                                计算
+                            </button>
                         </div>
                     </div>
+
                 </div>
             </div>
         </main>
+
     )
 }
 

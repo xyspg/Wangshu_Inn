@@ -211,27 +211,8 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </header>
-                    <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0 flex flex-col">
-                        <div className="bg-white dark:bg-gray-800 w-full mx-auto p-8">
-                            <div className="flex flex-row justify-between">
-                                <img src="/assets/banners/The%20Herons%20Court%201.png" className="max-h-64 my-6"/>
-                                <img src="/img/misspliter%20homa.jpeg" className="max-h-64 my-6"/>
-                            </div>
-                            <p className=" dark:text-white w-full md:w-2/3 mh-3 m-auto font-bold text-center text-2xl md:text-3xl">
-                                祈愿预告
-                            </p>
-                        </div>
 
-                        <div className="bg-white dark:bg-gray-800 w-full mx-auto p-8">
-                            <div className="flex flex-row justify-between">
-                                <img src="/assets/events/divine_ingenuity.jpg" className="max-h-64 my-6"/>
-                                <img src="/assets/events/overflowing_mastery.jpg" className="max-h-64 my-6"/>
-                            </div>
-                            <p className=" dark:text-white w-full md:w-2/3 mh-3 m-auto font-bold text-center text-2xl md:text-3xl">
-                                活动预告
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </main>

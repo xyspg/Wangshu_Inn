@@ -17,7 +17,7 @@ const Home: NextPage = () => {
                 <div>
                   <a
                       className="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-r-4 border-blue-500"
-                      href="/index"
+                      href="/home"
                   >
               <span className="text-left">
                 <svg
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                      href="#"
+                      href="/guides"
                   >
               <span className="text-left">
                 <svg
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                      href="subpages/calc.html"
+                      href="/calc"
                   >
               <span className="text-left">
                 <svg
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                      href="#"
+                      href="/bag"
                   >
               <span className="text-left">
                 <svg
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                      href="#"
+                      href="/planner"
                   >
               <span className="text-left">
                 <svg
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                      href="subpages/comment.html"
+                      href="/comment"
                   >
               <span className="text-left">
                 <svg
@@ -128,7 +128,7 @@ const Home: NextPage = () => {
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                      href="#"
+                      href="/abyss"
                   >
               <span className="text-left">
                 <svg
@@ -144,7 +144,7 @@ const Home: NextPage = () => {
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                      href="#"
+                      href="/userPanel"
                   >
               <span className="text-left">
                 <svg

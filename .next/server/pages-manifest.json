@@ -2,5 +2,11 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/abyss": "pages/abyss.js",
+  "/userPanel": "pages/userPanel.js",
+  "/comment": "pages/comment.js",
+  "/planner": "pages/planner.js",
+  "/calc": "pages/calc.js",
+  "/news": "pages/news.js",
+  "/home": "pages/home.js"
 }
