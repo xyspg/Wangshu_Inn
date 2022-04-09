@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import PaimonFAQ from '../assets/paimon_faq.png'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
                 <div>
                   <a
                       className="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-r-4 border-blue-500"
-                      href="./index.html"
+                      href="/index"
                   >
               <span className="text-left">
                 <svg
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                      href="subpages/news.html"
+                      href="/news"
                   >
               <span className="text-left">
                 <svg

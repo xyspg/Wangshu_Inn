@@ -1,12 +1,4 @@
-<!doctype html>
-<html>
-<head>
-    <!-- ... -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/tailwind.css" rel="stylesheet">
-</head>
-<body>
+
 
 <div class="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative">
     <div class="flex items-start justify-between">
