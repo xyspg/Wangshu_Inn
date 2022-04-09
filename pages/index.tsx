@@ -8,6 +8,7 @@ const Home: NextPage = () => {
   return (
       <main className="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative">
         <div className="flex items-start justify-between">
+          {/*边栏*/}
           <div className="h-screen hidden lg:block my-4 ml-4 shadow-lg relative w-80">
             <div className="bg-white h-full rounded-2xl dark:bg-gray-700">
               <div className="flex items-center justify-center pt-6">
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
                 <div>
                   <a
                       className="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-r-4 border-blue-500"
-                      href="/home"
+                      href="/"
                   >
               <span className="text-left">
                 <svg
@@ -169,7 +170,7 @@ const Home: NextPage = () => {
                   <div className="container relative left-0 z-50 flex w-3/4 h-auto h-full">
                     <div className="relative flex items-center w-full lg:w-64 h-full group">
                       <div className="absolute z-50 flex items-center justify-center block w-auto h-10 p-3 pr-2 text-sm text-gray-500 uppercase cursor-pointer sm:hidden">
-                        {/*                  绘制搜索框搜索图标*/}
+                        {/*绘制搜索框搜索图标*/}
                         <svg
                             fill="none"
                             className="relative w-5 h-5"
@@ -211,10 +212,13 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </header>
+
+            {/*右侧主内容*/}
             <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0">
               <div className="flex flex-col flex-wrap sm:flex-row ">
                 <div className="w-full sm:w-1/2 xl:w-1/3">
                   <div className="mb-4">
+                    {/*每日素材*/}
                     <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
                       <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center">
@@ -258,6 +262,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
+                  {/*前往讨论区*/}
                   <div className="mb-4">
                     <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
                       <div className="flex items-center justify-between mb-6">
@@ -278,6 +283,7 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                 </div>
+                {/*角色配装攻略*/}
                 <div className="w-full sm:w-1/2 xl:w-1/3">
                   <div className="mb-4 mx-0 sm:ml-4 xl:mr-4">
                     <div className="shadow-lg rounded-2xl bg-white dark:bg-gray-700 w-full">
@@ -363,6 +369,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="w-full sm:w-1/2 xl:w-1/3">
                   <div className="mb-4">
+                    {/*未来活动*/}
                     <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700">
                       <div className="flex flex-wrap overflow-hidden">
                         <div className="w-full rounded shadow-sm">
@@ -380,6 +387,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
+                  {/*官方公告*/}
                   <div className="mb-4">
                     <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
                       <p className="font-bold text-4xl text-black dark:text-white">

@@ -17,7 +17,7 @@ const Home: NextPage = () => {
                             <div>
                                 <a
                                     className="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-r-4 border-blue-500"
-                                    href="/home"
+                                    href="/"
                                 >
               <span className="text-left">
                 <svg
@@ -212,8 +212,10 @@ const Home: NextPage = () => {
                         </div>
                     </header>
                     <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0 flex flex-col">
+                        {/*新活动预告*/}
                         <div className="bg-white dark:bg-gray-800 w-full mx-auto p-8">
                             <div className="flex flex-row justify-between">
+                                {/*导入图片*/}
                                 <img src="/assets/banners/The%20Herons%20Court%201.png" className="max-h-64 my-6"/>
                                 <img src="/img/misspliter%20homa.jpeg" className="max-h-64 my-6"/>
                             </div>
@@ -224,6 +226,7 @@ const Home: NextPage = () => {
 
                         <div className="bg-white dark:bg-gray-800 w-full mx-auto p-8">
                             <div className="flex flex-row justify-between">
+                                {/*导入图片*/}
                                 <img src="/assets/events/divine_ingenuity.jpg" className="max-h-64 my-6"/>
                                 <img src="/assets/events/overflowing_mastery.jpg" className="max-h-64 my-6"/>
                             </div>

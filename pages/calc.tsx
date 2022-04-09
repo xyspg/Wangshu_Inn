@@ -17,7 +17,7 @@ const Home: NextPage = () => {
                             <div>
                                 <a
                                     className="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-r-4 border-blue-500"
-                                    href="/home"
+                                    href="/"
                                 >
               <span className="text-left">
                 <svg
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </header>
-
+{/*角色计算器*/}
                     <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 rounded-xl ">
                         <div className="bg-white dark:bg-gray-800 w-auto mx-auto p-8">
                             <p className="text-4xl pb-32 mb-6">升级计算器</p>
@@ -271,6 +271,7 @@ const Home: NextPage = () => {
                                 计算
                             </button>
                         </div>
+                        {/*武器计算器*/}
                         <div className="bg-white dark:bg-gray-800 w-auto mx-auto p-8">
                             <p className="text-4xl pb-32 mb-6">武器计算器</p>
                             <div className=" relative">
