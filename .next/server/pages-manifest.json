@@ -1,5 +1,11 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/bag": "pages/bag.js",
+  "/planner": "pages/planner.js",
+  "/comment": "pages/comment.js",
+  "/abyss": "pages/abyss.js",
+  "/userPanel": "pages/userPanel.js",
+  "/": "pages/index.js"
 }
