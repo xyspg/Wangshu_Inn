@@ -3,8 +3,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import PaimonFAQ from '../assets/paimon_faq.png'
 import Link from 'next/link'
+import {Select} from "antd";
 
+
+const { Option } = Select;
+
+function onChange(value) {
+    console.log(`selected ${value}`);
+}
+
+function onSearch(val) {
+    console.log('search:', val);
+}
 const Home: NextPage = () => {
+    const onChange = () => {};
     return (
         <main className="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative">
             <div className="flex items-start justify-between">
@@ -212,11 +224,26 @@ const Home: NextPage = () => {
                         </div>
                     </header>
                     {/*暂时没写*/}
-
+                    <Select
+                        showSearch
+                        placeholder="Select a person"
+                        optionFilterProp="children"
+                        onChange={onChange}
+                        onSearch={onSearch}
+                        filterOption={(input, option) =>
+                            option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                        }
+                    >
+                        <Option value="jack">Jack</Option>
+                        <Option value="lucy">Lucy</Option>
+                        <Option value="tom">Tom</Option>
+                    </Select>,
                 </div>
             </div>
         </main>
     )
 }
+
+
 
 export default Home
