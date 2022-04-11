@@ -26,6 +26,7 @@ const Home: NextPage = () => {
                     fill="currentColor"
                     viewBox="0 0 2048 1792"
                     xmlns="http://www.w3.org/2000/svg"
+
                 ></svg>
               </span>
                                     <span className="mx-4 text-sm font-normal">主页</span>
