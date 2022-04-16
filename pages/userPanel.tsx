@@ -142,8 +142,8 @@ const Home: NextPage = () => {
                                         修改
                                     </button>
                             </div>
-                            <div className="shadow-md bg-white rounded-2xl w-full">
-                                <div className="p-8 text-xl text-gray-500">
+                            <div className="shadow-md bg-white dark:bg-gray-700 rounded-2xl w-full">
+                                <div className="p-8 text-xl text-gray-500 dark:text-white">
                                     <div>
                                         用户名
                                     </div>
@@ -152,13 +152,13 @@ const Home: NextPage = () => {
                                             className="flex flex-col md:flex-row w-3/4 mt-4 max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
                                             <div className=" relative ">
                                                 <input type="text" id=""
-                                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                       className=" rounded-lg border-transparent dark:bg-gray-800 flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                                                        placeholder="Kaedahara Kazuha"/>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                                <div className="p-8 text-xl text-gray-500">
+                                <div className="p-8 text-xl text-gray-500 dark:text-white">
                                     <div>
                                         Email
                                     </div>
@@ -167,13 +167,13 @@ const Home: NextPage = () => {
                                             className="flex flex-col md:flex-row w-3/4 mt-4 max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
                                             <div className=" relative ">
                                                 <input type="text" id=""
-                                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                       className=" rounded-lg dark:bg-gray-800 border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                                                        placeholder="example@i.pkuschool.edu.cn"/>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                                <div className="p-8 text-xl text-gray-500">
+                                <div className="p-8 text-xl text-gray-500 dark:text-white">
                                     <div>
                                         米游社 / Hoyolab UID
                                     </div>
@@ -182,13 +182,13 @@ const Home: NextPage = () => {
                                             className="flex flex-col md:flex-row w-3/4 mt-4 max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
                                             <div className=" relative ">
                                                 <input type="text" id=""
-                                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                       className=" rounded-lg dark:bg-gray-800 border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                                                        placeholder="example"/>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                                <div className="p-8 text-xl text-gray-500">
+                                <div className="p-8 text-xl text-gray-500 dark:text-white">
                                     <div>
                                         UID
                                     </div>
@@ -197,7 +197,7 @@ const Home: NextPage = () => {
                                             className="flex flex-col md:flex-row w-3/4 mt-4 max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
                                             <div className=" relative ">
                                                 <input type="text" id=""
-                                                       className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                                       className=" rounded-lg dark:bg-gray-800 border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                                                        placeholder="100000000"/>
                                             </div>
                                         </form>
@@ -206,7 +206,7 @@ const Home: NextPage = () => {
                                         <label className="text-gray-700" htmlFor="server">
                                             服务器
                                             <select id="server"
-                                                    className="p-8 w-52 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                                                    className="p-8 w-52 py-2 px-3 dark:bg-gray-800 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
                                                     name="server">
                                                 <option value="">
                                                     选择服务器

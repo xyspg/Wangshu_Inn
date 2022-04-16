@@ -144,20 +144,7 @@ const Home: NextPage = () => {
                         </div>
                     </header>
                     {/*暂时没写*/}
-                    <Select
-                        showSearch
-                        placeholder="Select a person"
-                        optionFilterProp="children"
-                        onChange={onChange}
-                        onSearch={onSearch}
-                        filterOption={(input, option) =>
-                            option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-                        }
-                    >
-                        <Option value="jack">Jack</Option>
-                        <Option value="lucy">Lucy</Option>
-                        <Option value="tom">Tom</Option>
-                    </Select>,
+
                 </div>
             </div>
         </main>

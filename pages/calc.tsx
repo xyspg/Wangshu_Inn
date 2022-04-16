@@ -27,7 +27,7 @@ function onChangeFinalLevel(value) {
 const Home: NextPage = () => {
     const onChange = () => {};
     return (
-        <main className="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative">
+        <main className="bg-gray-100 dark:bg-gray-800 h-screen overflow-hidden relative">
             <div className="flex items-start justify-between">
                 {/*边栏*/}
                 <div className="h-screen hidden lg:block shadow-lg relative w-80">
@@ -152,8 +152,8 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </header>
-                    <div className='inline-block p-8 w-full bg-white'>
-                        <p className='text-4xl'>角色计算器</p>
+                    <div className='inline-block p-8 w-full bg-white dark:bg-gray-700'>
+                        <p className='text-4xl dark:text-white'>角色计算器</p>
                         <div className='w-4 h-full'>
                         <Select
                             showSearch
@@ -201,14 +201,14 @@ const Home: NextPage = () => {
                         </Select>
 
                         </div>
-                        <div className='text-2xl '>当前等级
+                        <div className='text-2xl dark:text-white '>当前等级
                             <InputNumber min={1} max={90} defaultValue={1} onChangeCurentLevel={onChange} />
                         </div>
-                        <div className='text-2xl '>目标等级
+                        <div className='text-2xl dark:text-white'>目标等级
                             <InputNumber min={1} max={90} defaultValue={1} onChangeFinalLevel={onChange} />
                         </div>
                         <Button type="primary">计算</Button>
-                        <p className='text-4xl'>武器计算器</p>
+                        <p className='text-4xl dark:text-white'>武器计算器</p>
                         <div className='w-4 h-full'>
                         <Select
                             showSearch
@@ -227,10 +227,10 @@ const Home: NextPage = () => {
                         </Select>
 
                         </div>
-                        <div className='text-2xl '>当前等级
+                        <div className='text-2xl dark:text-white    '>当前等级
                             <InputNumber min={1} max={90} defaultValue={1} onChangeCurentLevel={onChange} />
                         </div>
-                        <div className='text-2xl '>目标等级
+                        <div className='text-2xl dark:text-white'>目标等级
                             <InputNumber min={1} max={90} defaultValue={1} onChangeFinalLevel={onChange} />
                         </div>
                         <Button type="primary">计算</Button>
