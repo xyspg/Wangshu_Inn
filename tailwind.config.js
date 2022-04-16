@@ -6,7 +6,7 @@ purge: [
     darkMode: false, // or 'media' or 'class'
     theme: {
     fontFamily: {
-        serif: ['HYRunYuan','55W'],
+        display: ['HYRunYuan-55W'],
     },
   extend: {},
 },
