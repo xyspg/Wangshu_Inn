@@ -1,162 +1,112 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import PaimonFAQ from '../assets/paimon_faq.png'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import Link from 'next/link'
+
+function getDate(){
+  var str = "星期";
+  var week = new Date().getDay();
+  switch (week) {
+    case 0 :
+      str += "日";
+      break;
+    case 1 :
+      str += "一";
+      break;
+    case 2 :
+      str += "二";
+      break;
+    case 3 :
+      str += "三";
+      break;
+    case 4 :
+      str += "四";
+      break;
+    case 5 :
+      str += "五";
+      break;
+    case 6 :
+      str += "六";
+      break;
+  }
+  alert(str);
+}
 
 const Home: NextPage = () => {
   return (
+      <html>
+      <body>
       <main className="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative">
         <div className="flex items-start justify-between">
           {/*边栏*/}
-          <div className="h-screen hidden lg:block my-4 ml-4 shadow-lg relative w-80">
-            <div className="bg-white h-full rounded-2xl dark:bg-gray-700">
+          <div className="h-screen hidden lg:block shadow-lg relative w-80">
+            <div className="bg-white h-full dark:bg-gray-700">
               <div className="flex items-center justify-center pt-6">
                 <Image src={PaimonFAQ}  height={100} width={100} className="max-h-16" />
               </div>
-              <nav className="mt-6">
+              <nav className="mt-6 ml-4">
                 <div>
                   <a
                       className="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-r-4 border-blue-500"
                       href="/"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    height={20}
-                    fill="currentColor"
-                    viewBox="0 0 2048 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
                     <span className="mx-4 text-sm font-normal">主页</span>
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                       href="/news"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    height={20}
-                    fill="currentColor"
-                    className="m-auto"
-                    viewBox="0 0 2048 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
+
                     <span className="mx-4 text-sm font-normal">资讯</span>
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                       href="/guides"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    height={20}
-                    fill="currentColor"
-                    className="m-auto"
-                    viewBox="0 0 2048 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
+
                     <span className="mx-4 text-sm font-normal">攻略</span>
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                       href="/calc"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    height={20}
-                    fill="currentColor"
-                    className="m-auto"
-                    viewBox="0 0 2048 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
+
                     <span className="mx-4 text-sm font-normal">计算器</span>
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                       href="/bag"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    height={20}
-                    className="m-auto"
-                    fill="currentColor"
-                    viewBox="0 0 2048 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
+
                     <span className="mx-4 text-sm font-normal">背包</span>
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                       href="/planner"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    height={20}
-                    fill="currentColor"
-                    className="m-auto"
-                    viewBox="0 0 2048 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
+
                     <span className="mx-4 text-sm font-normal">规划</span>
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                       href="/comment"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    fill="currentColor"
-                    height={20}
-                    className="h-5 w-5"
-                    viewBox="0 0 1792 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
+
                     <span className="mx-4 text-sm font-normal">讨论版</span>
                   </a>
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                       href="/abyss"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    fill="currentColor"
-                    height={20}
-                    className="h-5 w-5"
-                    viewBox="0 0 1792 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
+
                     <span className="mx-4 text-sm font-normal">排行榜</span>
                   </a>
+
                   <a
                       className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
                       href="/userPanel"
                   >
-              <span className="text-left">
-                <svg
-                    width={20}
-                    fill="currentColor"
-                    height={20}
-                    className="h-5 w-5"
-                    viewBox="0 0 1792 1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                ></svg>
-              </span>
                     <span className="mx-4 text-sm font-normal">用户中心</span>
                   </a>
                 </div>
@@ -180,7 +130,7 @@ const Home: NextPage = () => {
                             stroke="currentColor"
                             viewBox="0 0 24 24"
                         >
-                          <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                          <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                       </div>
                       <svg
@@ -195,16 +145,16 @@ const Home: NextPage = () => {
                           className="block w-full py-1.5 pl-10 pr-4 leading-normal rounded-2xl focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 ring-opacity-90 bg-gray-100 dark:bg-gray-800 text-gray-400 aa-input"
                           placeholder="搜索"
                       />
-                      <div className="absolute right-0 hidden h-auto px-2 py-1 mr-2 text-xs text-gray-400 border border-gray-300 rounded-2xl md:block">
-                        +
-                      </div>
+                      {/*<div className="absolute right-0 hidden h-auto px-2 py-1 mr-2 text-xs text-gray-400 border border-gray-300 rounded-2xl md:block">*/}
+                      {/*  GO*/}
+                      {/*</div>*/}
                     </div>
                   </div>
                   <div className="relative p-1 flex items-center justify-end w-1/4 ml-5 mr-4 sm:mr-0 sm:right-auto">
                     <a href="#" className="block relative">
                       <img
-                          alt="profil"
-                          src="./img/kazuha_pf.jpg"
+                          alt="profile"
+                          src="https://s1.ax1x.com/2022/04/16/LJ3eQf.jpg"
                           className="mx-auto object-cover rounded-full h-10 w-10 "
                       />
                     </a>
@@ -223,7 +173,7 @@ const Home: NextPage = () => {
                       <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center">
                           <div className="flex flex-col">
-                      <span className="font-bold font-serif text-4xl text-black dark:text-white ml-2">
+                      <span className="font-bold font-display text-4xl text-black dark:text-white">
                         今日可刷取素材
                       </span>
                           </div>
@@ -231,7 +181,7 @@ const Home: NextPage = () => {
                       </div>
                       <div className="flex items-center justify-between mb-4 space-x-12">
                   <span className="px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200">
-                    星期三
+                    星期
                   </span>
                         <span className="px-2 py-1 flex items-center font-semibold text-xs rounded-md text-red-400 border border-red-400  bg-white">
                     天赋书双倍产出
@@ -268,7 +218,7 @@ const Home: NextPage = () => {
                       <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center">
                           <div className="flex flex-col">
-                      <span className="font-bold text-4xl text-black dark:text-white ml-2">
+                      <span className="font-bold text-4xl text-black dark:text-white">
                         前往讨论区
                       </span>
                           </div>
@@ -445,7 +395,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-
+      </body>
+      </html>
   )
 }
 
