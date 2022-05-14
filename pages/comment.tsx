@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import PaimonFAQ from '../assets/paimon_faq.png'
 import Link from 'next/link'
+import Script from 'next/script'
 
 const Home: NextPage = () => {
     return (
@@ -132,6 +133,7 @@ const Home: NextPage = () => {
                         </div>
                     </header>
                 {/*暂时没写*/}
+                    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
                 </div>
             </div>

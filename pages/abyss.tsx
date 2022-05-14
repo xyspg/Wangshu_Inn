@@ -134,7 +134,8 @@ const Home: NextPage = () => {
 
                     {/*允许用户上传数据*/}
                     <div className="w-1/4 p-8">
-                        <div className="form-control w-full max-w-xs">
+                        <div className='flex flex-row justify-center'>
+                        <div className="form-control w-full max-w-xs mr-4">
                             <label className="label">
                                 <span className="label-text">米游社 / hoyolab UID</span>
                             </label>
@@ -142,10 +143,107 @@ const Home: NextPage = () => {
                                 <label className="label">
                                 </label>
                         </div>
-                        <button className="btn btn-sm sm:btn-sm md:btn-md lg:btn-md">上传我的数据</button>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">最深抵达</span>
+                            </label>
+                            <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs"></input>
+                            <label className="label">
+                            </label>
+                        </div>
+                        </div>
+
+                        <button type="button"
+                                className="py-2 px-4 flex justify-center items-center  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  w-12 h-12 rounded-lg ">
+                            <svg width="20" height="20" fill="black" viewBox="0 0 1792 1792"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1344 1472q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm256 0q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm128-224v320q0 40-28 68t-68 28h-1472q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h427q21 56 70.5 92t110.5 36h256q61 0 110.5-36t70.5-92h427q40 0 68 28t28 68zm-325-648q-17 40-59 40h-256v448q0 26-19 45t-45 19h-256q-26 0-45-19t-19-45v-448h-256q-42 0-59-40-17-39 14-69l448-448q18-19 45-19t45 19l448 448q31 30 14 69z">
+                                </path>
+                            </svg>
+                        </button>
+
                     </div>
 
+                    <table className="table p-4 bg-white shadow rounded-lg">
+                        <thead>
+                        <tr>
+                            <th className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+
+                            </th>
+                            <th className="border-b-2 p-4 dark:border-dark-5 dark:text-white whitespace-nowrap font-normal text-gray-900">
+                                用户名
+                            </th>
+                            <th className="border-b-2 p-4 dark:border-dark-5 dark:text-white whitespace-nowrap font-normal text-gray-900">
+                                UID
+                            </th>
+                            <th className="border-b-2 p-4 dark:border-dark-5 dark:text-white whitespace-nowrap font-normal text-gray-900">
+                                最深抵达
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr className="text-gray-700">
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                1
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                ayaka
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                10001
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                12-3
+                            </td>
+                        </tr>
+                        <tr className="text-gray-700">
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                2
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                kazuha
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                10002
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                12-3
+                            </td>
+                        </tr>
+                        <tr className="text-gray-700">
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                3
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                kokomi
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                10003
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                12-2
+                            </td>
+                        </tr>
+                        <tr className="text-gray-700">
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                4
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                itto
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                10004
+                            </td>
+                            <td className="border-b-2 p-4 dark:border-dark-5">
+                                11-3
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                 </div>
+
             </div>
         </main>
     )
