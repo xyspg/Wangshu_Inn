@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import PaimonFAQ from '../assets/paimon_faq.png'
 import Link from 'next/link'
+import Kazuha from '../image/kazuha_pf.jpg'
 
 const Home: NextPage = () => {
     return (
@@ -136,7 +137,7 @@ const Home: NextPage = () => {
                         <div className="flex flex-row">
                             <div className="p-8">
                                 {/*修改按钮*/}
-                                <img src="../image/kazuha_pf.jpg" className="max-h-64 rounded-full"></img>
+                                <Image src={Kazuha}  height={250} width={250} className="max-h-16" />
                                     <button type="button"
                                             className="mt-4 px-4 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-black w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                                         修改

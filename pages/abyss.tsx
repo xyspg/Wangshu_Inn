@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                         <div className='flex flex-row justify-center'>
                         <div className="form-control w-full max-w-xs mr-4">
                             <label className="label">
-                                <span className="label-text">米游社 / hoyolab UID</span>
+                                <span className="label-text">米游社</span>
                             </label>
                             <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs"></input>
                                 <label className="label">

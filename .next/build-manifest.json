@@ -15,11 +15,6 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,10 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/comment": [
+    "/abyss": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/comment.js"
+      "static/chunks/pages/abyss.js"
+    ],
+    "/bag": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/bag.js"
     ]
   },
   "ampFirstPages": []

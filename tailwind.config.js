@@ -8,7 +8,11 @@ purge: [
     fontFamily: {
         display: ['HYRunYuan-55W'],
     },
-  extend: {},
+  extend: {
+      backgroundImage: {
+          'landscape': "url('image/bg.jpeg')",
+      }
+  },
 },
 variants: {},
 plugins: [

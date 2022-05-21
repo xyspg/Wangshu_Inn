@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
     return (
-        <main className="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative">
-            <div className="flex items-start justify-between">
+        <main className="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-auto relative">
+            <div className="flex items-start justify-between overflow-hidden">
                 {/*边栏*/}
                 <div className="h-screen hidden lg:block shadow-lg relative w-80">
                     <div className="bg-white h-full dark:bg-gray-700">
@@ -132,8 +132,42 @@ const Home: NextPage = () => {
                         </div>
                     </header>
                     {/*暂时没写*/}
+                <div>
+                    <div className="overflow-auto shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                        <a href="#" className="w-full block h-full">
+                            <img alt="blog photo" src="https://uploadstatic.mihoyo.com/puzzle/upload/puzzle/2022/03/28/00e06d3a24625cbe4bb3027b6444fecb_1797393152368618439.jpg" className="max-h-40 w-full object-cover"/>
+                            <div className="bg-white dark:bg-gray-800 w-full p-4">
+                                <p className="text-indigo-500 text-md font-medium">
+                                </p>
+                                <p className="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    新手教程
+                                </p>
+                                <p className="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    每日委托、深渊、铁匠铺锻造等都是在凌晨四点刷新的。
+                                    渊月螺旋（深渊9~12层）在每个月的第一天和第十六天的凌晨4:00进行刷新...... </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                        <a href="#" className="w-full block h-full">
+                            <img alt="blog photo" src="https://uploadstatic.mihoyo.com/puzzle/upload/puzzle/2022/03/28/00e06d3a24625cbe4bb3027b6444fecb_1797393152368618439.jpg" className="max-h-40 w-full object-cover"/>
+                            <div className="bg-white dark:bg-gray-800 w-full p-4">
+                                <p className="text-indigo-500 text-md font-medium">
+                                </p>
+                                <p className="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    新手教程
+                                </p>
+                                <p className="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    每日委托、深渊、铁匠铺锻造等都是在凌晨四点刷新的。
+                                    渊月螺旋（深渊9~12层）在每个月的第一天和第十六天的凌晨4:00进行刷新...... </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
 
                 </div>
+
             </div>
         </main>
     )
