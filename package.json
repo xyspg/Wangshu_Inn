@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@authing/react-ui-components": "^3.0.33",
+    "antd": "^4.19.5",
+    "daisyui": "^2.13.6",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-daisyui": "^1.7.6",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.4",
+    "@types/react": "^17.0.38",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.1",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.5.4"
+  }
+}

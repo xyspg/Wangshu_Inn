@@ -6,10 +6,26 @@ purge: [
     darkMode: false, // or 'media' or 'class'
     theme: {
     fontFamily: {
-        serif: ['HYRunYuan','55W'],
+        display: ['HYRunYuan-55W'],
     },
-  extend: {},
+  extend: {
+      backgroundImage: {
+          'landscape': "url('image/bg.jpeg')",
+      }
+  },
 },
 variants: {},
-plugins: [],
+plugins: [
+    require("daisyui")
+],
+    daisyui: {
+        styled: true,
+        themes: true,
+        base: true,
+        utils: true,
+        logs: true,
+        rtl: false,
+        prefix: "",
+        darkTheme: "dark",
+    },
 }
