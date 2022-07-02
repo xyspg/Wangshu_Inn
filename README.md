@@ -1,6 +1,5 @@
-# Wangshu_Inn
+# Wangshu\_Inn
 
 This is a little website app based on Next.js.
 
-You may need to install Tailwind CSS.
-https://www.tailwindcss.cn/docs/guides/nextjs
+Start by running index.html on the root

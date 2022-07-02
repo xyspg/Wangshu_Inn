@@ -136,13 +136,84 @@
                                         <div class="flex flex-col">
                       <span class="font-bold font-display text-4xl text-black dark:text-white">
                         今日可刷取素材
+                              <?php
+                              include("pages_html/backend/connectphp.php");
+                              $result = $conn->query('SELECT * from dayreglmet');
+                              $arrDayReglMet = mysqli_fetch_assoc($result);
+                              $arrDayReglMet1 = mysqli_fetch_assoc($result);
+                              $whatDay = date('w');
+                              $monMet = $arrDayReglMet['Mon'];
+                              $monMet1 = $arrDayReglMet1['Mon'];
+                              $tueMet = $arrDayReglMet['Tue'];
+                              $tueMet1 = $arrDayReglMet1['Tue'];
+                              $wedMet = $arrDayReglMet['Wed'];
+                              $wedMet1 = $arrDayReglMet1['Wed'];
+                              $thuMet = $arrDayReglMet['Thu'];
+                              $thuMet1 = $arrDayReglMet1['Thu'];
+                              $friMet = $arrDayReglMet['Fri'];
+                              $friMet1 = $arrDayReglMet1['Fri'];
+                              $satMet = $arrDayReglMet['Sat'];
+                              $satMet1 = $arrDayReglMet1['Sat'];
+                              $sunMet = $arrDayReglMet['Sun'];
+                              $sunMet1 = $arrDayReglMet1['Sun'];
+                              //    echo "<h3>{$whatDay}</h3>";
+                              if ($whatDay == '1'){
+                                  echo "今天是：星期一";
+                                  echo "<br>";
+                                  echo "角色有:{$monMet}";
+                                  echo "材料有：{$monMet1}";
+                                  echo "<div class='px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200' id='time-show'>星期一</div>";
+                              }
+                              elseif ($whatDay == '2'){
+                                  echo "今天是：星期二";
+                                  echo "<br>";
+                                  echo "英雄有:{$tueMet}";
+                                  echo "材料有：{$tueMet1}";
+                                  echo "<div class='px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200' id='time-show'>星期二</div>";
+                              }
+                              elseif ($whatDay == '3'){
+                                  echo "今天是：星期三";
+                                  echo "<br>";
+                                  echo "英雄有:{$wedMet}";
+                                  echo "材料有：{$wedMet1}";
+                                  echo "<div class='px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200' id='time-show'>星期三</div>";
+                              }
+                              elseif ($whatDay == '4'){
+                                  echo "今天是：星期四";
+                                  echo "<br>";
+                                  echo "英雄有:{$thuMet}";
+                                  echo "材料有：{$thuMet1}";
+                              }
+                              elseif ($whatDay == '5'){
+//                                  echo "今天是：星期五";
+//               四                  echo "<br>";
+//                                  echo "英雄有:{$friMet}";
+//                                  echo "材料有：{$friMet1}";
+
+                                  echo "<div class='px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200' id='time-show'>星期五</div>";
+                              }
+                              elseif ($whatDay == '6'){
+//                                  echo "今天是：星期六";
+//                                  echo "<br>";
+//                                  echo "英雄有:{$satMet}";
+//                                  echo "材料有:{$satMet1}";
+                                  echo "<div class='px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200' id='time-show'>星期六</div>";
+                              }
+                              else{
+                                  echo "今天是：星期日";
+                                  echo "<br>";
+                                  echo "英雄有:{$sunMet}";
+                                  echo "材料有：{$sunMet1}";
+                                  echo "<div class='px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200' id='time-show'>星期日/div>";
+                              }
+                              ?>
                       </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex items-center justify-between mb-4 space-x-12">
-                  <div class="px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200" id="time-show">星期六
-                  </div>
+<!--                  <div class="px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200" id="time-show">星期-->
+<!--                  </div>-->
                                     <span class="px-2 py-1 flex items-center font-semibold text-xs rounded-md text-red-400 border border-red-400  bg-white">
                     天赋书双倍产出
                   </span>
@@ -239,16 +310,27 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <div class="py-2 px-4 text-gray-600 flex items-center justify-between border-b-2 border-gray-100">
-                                    <p class="text-lg flex items-center dark:text-white">
-                                        枫原万叶的狗
+                                <?php
+                                include("connectphp.php");
+                                $result = $conn->query('SELECT heroname,value FROM sorttable ORDER BY value DESC');
+                                $datacountInSort = mysqli_num_rows($result);
+                                echo "<tr><td style='color:rebeccapurple'>英雄</td><td style='color: rebeccapurple'>分数</td></tr>";
+                                for($i=0;$i<$datacountInSort;$i++){
+                                    $arrSort = mysqli_fetch_assoc($result);
+                                    $heroname = $arrSort['heroname'];
+                                    $value = $arrSort['value'];
+                                    echo " <div class='py-2 px-4 text-gray-600 flex items-center justify-between border-b-2 border-gray-100'>
+                                    <p class='text-lg flex items-center dark:text-white'>
+                                        {$heroname}
                                     </p>
-                                    <div class="flex items-center">
-                    <span class="text-lg text-black  mr-2 ml-2 md:ml-4 dark:text-white">
-                      12-3
+                                    <div class='flex items-center'>
+                    <span class='text-lg text-black  mr-2 ml-2 md:ml-4 dark:text-white'>
+                      {$value}
                     </span>
                                     </div>
-                                </div>
+                                </div>";
+                                }
+                                ?>
                                 <div class="py-2 px-4 text-gray-600 flex items-center justify-between border-b-2 border-gray-100">
                                     <p class="text-lg flex items-center dark:text-white">
                                         神里绫华的狗
@@ -256,16 +338,6 @@
                                     <div class="flex items-center">
                     <span class="text-lg text-black  mr-2 ml-2 md:ml-4 dark:text-white">
                       12-3
-                    </span>
-                                    </div>
-                                </div>
-                                <div class="py-2 px-4 text-gray-600 flex items-center justify-between border-b-2 border-gray-100">
-                                    <p class="text-lg flex items-center dark:text-white">
-                                        雷电将军的狗
-                                    </p>
-                                    <div class="flex items-center">
-                    <span class="text-lg text-black  mr-2 ml-2 md:ml-4 dark:text-white">
-                      12-1
                     </span>
                                     </div>
                                 </div>
@@ -300,9 +372,19 @@
 <!--                        {/*官方公告*/}-->
                         <div class="mb-4">
                             <div class="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
-                                <p class="font-bold text-4xl text-black dark:text-white">
-                                    官方公告
-                                </p>
+                                <?php
+                                include("connectphp.php");
+                                $result = $conn->query('SELECT one from officetable');
+                                $datacountInOfficeTable = mysqli_num_rows($result);
+                                for ($i = 0; $i < $datacountInOfficeTable; $i++){
+                                    $arrOfficeTable = mysqli_fetch_assoc($result);
+                                    $one = $arrOfficeTable['one'];
+                                    echo "<p class='font-bold text-4xl text-black dark:text-white'>{$one}</p>";
+                                }
+                                ?>
+<!--                                <p class="font-bold text-4xl text-black dark:text-white">-->
+<!--                                    官方公告-->
+<!--                                </p>-->
                                 <ul>
                                     <li class="flex items-center my-6 space-x-2">
                                         <a href="#" class="block relative">

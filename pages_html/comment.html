@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<main class="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative">
+<main class="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-auto relative">
     <div class="flex items-start justify-between">
         <div class="h-screen hidden lg:block shadow-lg relative w-80">
             <div class="bg-white h-full dark:bg-gray-700">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
             </header>
-            <div id="vcomments"></div>
+            <div class='overflow-auto' id="vcomments"></div>
             <script>
                 new Valine({
                     el: '#vcomments',
